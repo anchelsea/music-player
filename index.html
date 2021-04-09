@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link class="icon-tittle" rel="icon" href="images/js-square-brands.svg" >
-    <title>Template</title>
+    <link class="icon-tittle" rel="icon" href="images/js-square-brands.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Music player</title>
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
+    <div class="player-container">
+        <!-- Song -->
+        <div class="img-container">
+            <img src="images/pexels-photo-207697.jpeg" alt="Album Art">
+        </div>
+        <h2 id="title">Electric Chill Machine</h2>
+        <h3 id="artlist">Annnn</h3>
+        <audio src="music/1-Phut-Andiez.mp3" ></audio>
+        <!-- Progress -->
+        <div class="progress-container" id="progress-cointainer">
+            <div class="progress" id="progress"></div>
+            <div class="duration-wrapper">
+                <span id="current-time">0:00</span>
+                <span id="duration">6:16</span>
+            </div>
+        </div>
+        <!-- Controls -->
+        <div class="player-controls">
+        <i class="fas fa-backward" id="prev" title="Previous"></i>
+        <i class="fab fa-google-play main-button" id="play" title="Play"></i>
+        <i class="fas fa-forward"  id="next" title="Next"></i>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
+
 </html>
